@@ -1,6 +1,6 @@
 import { kafka } from "./kafka-client.js";
 
-async function init(){
+async function AdminInit(){
     const admin = kafka.admin();
     console.log("Admin is connecting...");
 
@@ -21,4 +21,4 @@ async function init(){
     await admin.disconnect();
 }
 
-init();
+AdminInit();
